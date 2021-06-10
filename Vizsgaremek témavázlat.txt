@@ -1,0 +1,22 @@
+Utcai futóversenyeket rendezõ cég nyilvántartó adatbázis megtervezése böngészõ (és windows desktop) felülethez.
+Fõbb funkciók és entitások:
+- Futóesemény (kód, rövid név, teljes név, dátum)
+- Futóverseny (kód, futóeseménykód, táv, létszámlimit [, helyszín, útvonal])
+- Nevezõ (kód, publikusazonosító, rövid név, teljes név, webes felhasználónév, jelszó(kód), nem, születési dátum, vezetékes telefon, mobiltelefon, e-mail, cím, adatkezelésihozzájárulásstátusz)
+- Számlafizetõ (kód, rövid név, teljes név, cím)
+- Eredmény (kód?, nevezésazonosító, eredmény)
+- Nevezés (kód, futóversenyazonosító, nevezõazonosító, pólóméret, futócipõmárka, rajtszám, eredmény, baj esetén értesítendõ, eredményküldésmobilra, eredményküldésemailben)
+- Fizetésimód (kód, fizetésimód)
+- Hírlevelek (kód, tartalom, kiküldésrekerült, kiküldésdátum)
+- Hírlevélküldés (nevezõazonosító, hírlevélazonosító)
+- Felhasználók és jogosultságok (kód, név, etc.)
+Üzleti modell:
+- Cég évente több alkalommal, több helyszínen (egy napon csak egy helyszínen) rendez utcai futóversenyeket.
+- Alkalmanként több különbözõ távon lehet indulni.
+- A versenyeken csak egyéni nevezések vannak.
+- A nevezés regisztrációhoz kötött. El kell fogadni az adatkezelést, opció a marketing célú.
+- Webes felületen lehet nevezni. Nevezéskor lehet választani az eredmény küldését e-mailben és/vagy SMS-ben.
+- A webes felületen csak bankkártyával lehet fizetni. A webes felületen az egyszerûség kedvéért csak saját magát nevezheti a nevezõ és csak azt az egy nevezést fizetheti. Ha nem túl bonyolult, akkor megpróbálható, hogy több nevezés is fizethetõ legyen.
+- Csoportos nevezés lehetséges. Az adatok átadása fejlécezett .csv állományon keresztül történik. A regisztrált futók esetén a publikusazonosító használata kötelezõ, ennek hiányában új nevezõként szerepelnek. Csoportos nevezés esetén a fizetés lehet bankkártyás, készpénzes vagy utalásos.
+- Az idõmérést külsõ cég végzi. Adatok átadása (nevezõazonosító, név, város, ország, nem) visszavétele .csv-ben.
+
