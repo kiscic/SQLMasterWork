@@ -1,0 +1,2 @@
+# SQLMasterWork
+Vizsgaremek készítés
